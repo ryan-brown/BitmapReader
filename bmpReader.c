@@ -60,7 +60,7 @@ BitmapImage readBmp(char* file) {
 }
 
 int main(int argc, char const *argv[]) {
-	BitmapImage bmp = readBmp("img3.bmp");
+	BitmapImage bmp = readBmp("img.bmp");
 
 	printf("Bitmap Image Info\nWidth: %dpx\nHeight %dpx\nSize: %d bytes\n\n", bmp.width, bmp.height, bmp.fileSize);
 
