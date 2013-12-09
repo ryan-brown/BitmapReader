@@ -5,7 +5,7 @@
 
 #define PIXEL_START_INDEX 10
 #define BITMAP_WIDTH_INDEX 18
-#define BITMAP_HEIGHT_INDEX 18
+#define BITMAP_HEIGHT_INDEX 22
 
 typedef struct {
 	int width;
@@ -60,7 +60,7 @@ BitmapImage readBmp(char* file) {
 }
 
 int main(int argc, char const *argv[]) {
-	BitmapImage bmp = readBmp("img2.bmp");
+	BitmapImage bmp = readBmp("img3.bmp");
 
 	printf("Bitmap Image Info\nWidth: %dpx\nHeight %dpx\nSize: %d bytes\n\n", bmp.width, bmp.height, bmp.fileSize);
 
@@ -74,4 +74,3 @@ int main(int argc, char const *argv[]) {
 	
 	return 0;
 }
-
